@@ -3,7 +3,7 @@
  * 
  */
 
-namespace ABSO\Includes\Traits;
+namespace ABSO_THEME\Inc\Traits;
 
 
 trait Singleton {

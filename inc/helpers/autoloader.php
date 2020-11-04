@@ -5,7 +5,7 @@
  * @package Abso
  */
 
-namespace ABSO\Includes\Helpers;
+namespace ABSO_THEME\Inc\Helpers;
 
 
 /**
@@ -19,7 +19,7 @@ namespace ABSO\Includes\Helpers;
 
 function autoloader( $resource = '' ) {
     $resource_path = false;
-    $namespace_root = 'ABSO\\';
+    $namespace_root = 'ABSO_THEME\\';
     $resource = trim( $resource, '\\' );
 
 
@@ -73,7 +73,7 @@ function autoloader( $resource = '' ) {
 				break;
 		}
 
-		$resource_path = sprintf( '%s/inc/%s/%s.php', untrailingslashit( AQUILA_DIR_PATH ), $directory, $file_name );
+		$resource_path = sprintf( '%s/inc/%s/%s.php', untrailingslashit( ABSO_DIR_PATH ), $directory, $file_name );
 
 	}
 
@@ -90,4 +90,4 @@ function autoloader( $resource = '' ) {
 
 }
 
-spl_autoload_register( '\ABSO\Includes\Helpers\autoloader' );
+spl_autoload_register( '\ABSO_THEME\Inc\Helpers\autoloader' );

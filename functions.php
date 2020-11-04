@@ -4,11 +4,19 @@
  * @package Abso
  */
 
+use ABSO_THEME\Inc\ABSO_THEME;
+
 if( ! defined( 'ABSO_DIR_PATH' ) ) {
     define( 'ABSO_DIR_PATH', untrailingslashit( get_template_directory() ) );
 }
 
-require_once ABSO_DIR_PATH . '/includes/helpers/autoloader.php';
+require_once ABSO_DIR_PATH . '/inc/helpers/autoloader.php';
+
+function abso_get_theme_instance() {
+    ABSO_THEME::get_instance();
+}
+
+abso_get_theme_instance();
 
 
 // Enqueue styles and scripts
