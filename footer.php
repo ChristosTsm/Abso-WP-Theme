@@ -1,9 +1,11 @@
 
 
-<?php wp_footer(); ?>
+                <?php wp_footer(); ?>
 
+            </div>
 
-</div>
-</div>
-</body>
+        </div>
+
+    </body>
+    
 </html>
