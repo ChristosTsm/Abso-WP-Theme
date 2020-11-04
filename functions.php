@@ -4,6 +4,12 @@
  * @package Abso
  */
 
+if( ! defined( 'ABSO_DIR_PATH' ) ) {
+    define( 'ABSO_DIR_PATH', untrailingslashit( get_template_directory() ) );
+}
+
+require_once ABSO_DIR_PATH . '/includes/helpers/autoloader.php';
+
 
 // Enqueue styles and scripts
 function abso_enqueue_scripts( ) {
