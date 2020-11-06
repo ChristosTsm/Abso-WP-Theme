@@ -1,5 +1,5 @@
 <?php
-/***
+/**
  * Theme Functions
  * @package Abso
  */

@@ -15,9 +15,9 @@ class ABSO_THEME {
 
     protected function __construct() {
         //  Load other classes.
+        Menus::get_instance();
         Assets::get_instance();
         $this->setup_hooks();
-
     }
 
     protected function setup_hooks() {
