@@ -17,6 +17,7 @@ class ABSO_THEME {
         //  Load other classes.
         Menus::get_instance();
         Assets::get_instance();
+        Meta_boxes::get_instance();
         $this->setup_hooks();
     }
 
@@ -41,6 +42,17 @@ class ABSO_THEME {
         ]);
 
         add_theme_support( 'post-thumbnails' );
+
+        /**
+         * Register image sizes.
+         * 
+         * param1 -> custom name added on /helpers/template-tags.php 
+         * param2 -> width
+         * param3 -> height
+         * param4 -> crop ( crop to the center if img is big)
+         */
+
+        add_image_size( 'featured-thumbnail', 350, 233, true ); 
 
         add_theme_support( 'customize-selective-refresh-widgets' );
 

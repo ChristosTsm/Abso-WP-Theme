@@ -17,6 +17,7 @@ if( ! defined( 'ABSO_DIR_URI' ) ) {
 }
 
 require_once ABSO_DIR_PATH . '/inc/helpers/autoloader.php';
+require_once ABSO_DIR_PATH . '/inc/helpers/template-tags.php';
 
 function abso_get_theme_instance() {
     ABSO_THEME::get_instance();
