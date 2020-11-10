@@ -32,10 +32,25 @@
             )
         );
     } else {
+
         abso_the_excerpt( 200 );
+
         printf( '<br>' );
+
         echo abso_excerpt_more();
+
     }
+
+    // When post has page breaks in gutenberg editor
+    wp_link_pages( 
+        [
+
+            'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'abso' ),
+
+            'after' => '</div>'
+            
+        ] 
+    );
     
     ?>
 
