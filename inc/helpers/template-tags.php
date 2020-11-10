@@ -1,6 +1,5 @@
 <?php 
 
-
 function get_the_post_custom_thumbnail( $post_id, $size = 'featured-thumbnail', $additional_attributes = []  ) {
 
     $custom_thumbnail = '';
@@ -39,6 +38,7 @@ function the_post_custom_thumbnail ( $post_id, $size = 'featured-thumbnail', $ad
 }
 
 function abso_posted_on() {
+
     $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
 
@@ -64,3 +64,57 @@ function abso_posted_on() {
 
     echo '<span class="posted-on text-secondary">' . $posted_on . '</span>';
 }
+
+
+function abso_posted_by() {
+
+    $byline = sprintf(
+
+        esc_html_x( ' by %s', 'post author', 'abso' ),
+
+        '<span class="author vcard"><a href=" ' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . ' ">' . esc_html( get_the_author() ) . '</a></span>'
+
+    );
+
+    echo '<span class="byline text-secondary">' . $byline . '</span>';
+
+}
+
+function abso_the_excerpt( $trim_character_count = 0 ) {
+
+	if ( ! has_excerpt() || 0 === $trim_character_count ) {
+
+        the_excerpt();
+        
+        return;
+        
+	}
+
+    $excerpt = wp_strip_all_tags( get_the_excerpt() );
+    
+    $excerpt = substr( $excerpt, 0, $trim_character_count );
+    
+    $excerpt = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
+    
+
+	echo $excerpt . '...';
+ 
+}
+
+function abso_excerpt_more( $more = '' ) {
+
+	if ( ! is_single() ) {
+
+        $more = sprintf( '<a class="abso-read-more" href="%1$s"><button>%2$s</button></a>',
+        
+            get_permalink( get_the_ID() ),
+            
+            __( 'Read more', 'abso' )
+            
+        );
+        
+	}
+
+	return $more;
+}
+

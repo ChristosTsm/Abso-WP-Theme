@@ -24,3 +24,11 @@ img {
 .updated:not(.published) {
     display: none;
 }
+
+.abso-read-more button {
+    outline: none;
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    padding: 0;
+}
