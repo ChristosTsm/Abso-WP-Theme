@@ -27,12 +27,12 @@ abso_get_theme_instance();
 
 
 // Enqueue styles and scripts
-function abso_enqueue_scripts( ) {
+// function abso_enqueue_scripts( ) {
 
 
     
 
 
-}
+// }
 
-add_action( 'wp_enqueue_scripts', 'abso_enqueue_scripts' );
+// add_action( 'wp_enqueue_scripts', 'abso_enqueue_scripts' );
