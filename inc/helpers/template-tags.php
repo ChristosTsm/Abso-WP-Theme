@@ -118,3 +118,9 @@ function abso_excerpt_more( $more = '' ) {
 	return $more;
 }
 
+function abso_pagination() {
+
+    previous_post_link( );
+    next_post_link( );
+    
+}
