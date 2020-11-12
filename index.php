@@ -53,7 +53,7 @@
 
 			endif;
 
-            // abso_pagination();
+            abso_pagination();
             
 			?>
 		</main>

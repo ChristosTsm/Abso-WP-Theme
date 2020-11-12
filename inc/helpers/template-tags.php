@@ -120,7 +120,22 @@ function abso_excerpt_more( $more = '' ) {
 
 function abso_pagination() {
 
-    previous_post_link( );
-    next_post_link( );
-    
+    $allowed_tags = [
+        'span' => [
+            'class' => [],
+        ],
+        'a' => [
+            'class' => [],
+            'href' => []
+        ]
+    ];
+
+    $args = [
+        'before_page_number' => '<span class="btn">',
+        'after_page_number' => '</span>'
+    ];
+
+    printf( '<nav class="abso-pagination clearfix mb-5">%s</nav>', wp_kses( paginate_links( $args ), $allowed_tags ) );
+
 }
+

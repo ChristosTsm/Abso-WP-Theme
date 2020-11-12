@@ -32,3 +32,20 @@ img {
     border: none;
     padding: 0;
 }
+
+.page-numbers.current > span {
+    color: #007bff;
+}
+
+.page-numbers > span {
+    color: #333;
+}
+
+.prev ,
+.next {
+    color: #333 !important;
+}
+
+.post-navigation > a {
+    color: #333;
+}

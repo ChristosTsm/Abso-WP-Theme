@@ -1,4 +1,5 @@
 <?php
+
 /**
  * 
  *  Single Post Template
@@ -6,11 +7,10 @@
  * @package Abso
  */
 
-get_header( ); 
+get_header();
 ?>
 
 <div id="primary">
-
 		<main id="main" class="site-main mt-5" role="main">
 
 			<div class="container">
@@ -19,11 +19,19 @@ get_header( );
 
 					<div class="col-lg-8 col-md-8 col-sm-12">
 
-                        <?php if ( have_posts() ) : ?>
+                        <?php
+                        
+                        if ( have_posts() ) :
+                            
+                            ?>
                             
 							<div class="post-wrap">
 
-                            <?php if ( is_home() && ! is_front_page() ) { ?>
+                            <?php
+                            
+							if ( is_home() && ! is_front_page() ) {
+
+                                ?>
                                 
 								<header class="mb-5">
 
@@ -35,29 +43,51 @@ get_header( );
                                     
                                 </header>
                                 
-                            <?php }
+                                <?php
+                                
+                            }
+                            
 
 							while ( have_posts() ) : the_post();
 
 								get_template_part( 'template-parts/content' );
 
-                            endwhile; 
+							endwhile;
+							?>
 
-                            ?>
+						<?php
 
-                            <?php else : 
-                        
+						else :
+
 							get_template_part( 'template-parts/content-none' );
 
-                            ?>
+							?>
 
                             </div>
                             
-                        <?php endif; ?>
+                        <?php
+                        
+						endif;
 
-                        <?php abso_pagination(); ?>
-
+                        ?>
+                        
                     </div>
+
+                    <div class="post-navigation mb-5">
+
+                        <?php previous_post_link( ); ?>
+                        
+                        <span> / </span>
+
+                       <?php next_post_link( ); ?> 
+                        
+                    </div>
+                    
+                </div>
+                
+				<div class="col-lg-4 col-md-4 col-sm-12">
+
+                    <?php get_sidebar(); ?>
                     
                 </div>
                 
@@ -68,4 +98,4 @@ get_header( );
 	</div>
 
 
-<?php get_footer( ); ?>
+<?php get_footer(); ?>

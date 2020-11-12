@@ -18,6 +18,7 @@ class ABSO_THEME {
         Menus::get_instance();
         Assets::get_instance();
         Meta_boxes::get_instance();
+        Sidebar::get_instance();
         $this->setup_hooks();
     }
 
