@@ -1,0 +1,112 @@
+/* montserrat-300 - latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+src: url(../../src/library/fonts/montserrat/montserrat-v15-latin-300.eot); /* IE9 Compat Modes */
+src: local('Montserrat Light'), local('Montserrat-Light'),
+        url(../../src/library/fonts/montserrat/montserrat-v15-latin-300.eot?#iefix) format('embedded-opentype'), 
+        url(../../src/library/fonts/montserrat/montserrat-v15-latin-300.woff2) format('woff2'), 
+        url(../../src/library/fonts/montserrat/montserrat-v15-latin-300.woff) format('woff'), 
+        url(../../src/library/fonts/montserrat/montserrat-v15-latin-300.ttf) format('truetype'), 
+        url(../../src/library/fonts/montserrat/montserrat-v15-latin-300.svg#Montserrat) format('svg'); /* Legacy iOS */
+}
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../src/library/fonts/montserrat/montserrat-v15-latin-regular.eot); /* IE9 Compat Modes */
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-regular.eot?#iefix) format('embedded-opentype'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-regular.woff2) format('woff2'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-regular.woff) format('woff'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-regular.ttf) format('truetype'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-regular.svg#Montserrat) format('svg'); /* Legacy iOS */
+}
+  /* montserrat-600 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../../src/library/fonts/montserrat/montserrat-v15-latin-600.eot); /* IE9 Compat Modes */
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-600.eot?#iefix) format('embedded-opentype'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-600.woff2) format('woff2'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-600.woff) format('woff'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-600.ttf) format('truetype'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-600.svg#Montserrat) format('svg'); /* Legacy iOS */
+}
+  /* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../../src/library/fonts/montserrat/montserrat-v15-latin-700.eot); /* IE9 Compat Modes */
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-700.eot?#iefix) format('embedded-opentype'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-700.woff2) format('woff2'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-700.woff) format('woff'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-700.ttf) format('truetype'), 
+         url(../../src/library/fonts/montserrat/montserrat-v15-latin-700.svg#Montserrat) format('svg'); /* Legacy iOS */
+  }
+/*---------------------------------
+		Colors Variables
+-----------------------------------*/
+/*---------------------------------
+		Colors Variables
+-----------------------------------*/
+/*---------------------------------
+		Opacity
+-----------------------------------*/
+/*---------------------------------
+		Gradient
+-----------------------------------*/
+/*---------------------------------
+		Element Colors
+-----------------------------------*/
+/*---------------------------------
+		Border Colors
+-----------------------------------*/
+/*----------------
+		Font
+------------------*/
+/*---------------------------------
+		Body Text Font Sizes
+-----------------------------------*/
+/**
+ * Add font scale with media query as per configuration on $body-text
+ * Ex: @include body-text( h1 );
+ * This will add font-size and line-height with different breakpoints.
+ */
+/* Entry meta */
+.updated:not(.published) {
+  display: none; }
+
+.abso-read-more button {
+  outline: none;
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  padding: 0; }
+
+/* Pagination */
+.page-numbers.current > span {
+  color: #007bff; }
+
+.page-numbers > span {
+  color: #333; }
+
+.prev,
+.next {
+  color: #333 !important; }
+
+.post-navigation > a {
+  color: #333; }
+
+/* Nav item */
+.nav-item:hover .dropdown-menu:not(.show) {
+  display: block; }
+
+
+/*# sourceMappingURL=main.css.map*/

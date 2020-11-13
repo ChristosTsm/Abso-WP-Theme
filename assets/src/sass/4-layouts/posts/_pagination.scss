@@ -1,5 +1,17 @@
 /* Pagination */
 .page-numbers.current > span {
-	background-color: gray;
-	color: #fff;
+    color: #007bff;
+}
+
+.page-numbers > span {
+    color: #333;
+}
+
+.prev ,
+.next {
+    color: #333 !important;
+}
+
+.post-navigation > a {
+    color: #333;
 }
