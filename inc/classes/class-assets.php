@@ -37,7 +37,7 @@ class Assets {
 
     public function register_scripts() {
         // Register Scripts
-        wp_register_script( 'main-js',  ABSO_DIR_URI . '/assets/js/main.js', array('jquery'), '1.0.0', true );
+        wp_register_script( 'main-js',  ABSO_BUILD_JS_URI . '/main.js', array( 'jquery' ), '1.0.0', true );
         wp_register_script( 'bootstrap-js',  ABSO_DIR_URI . '/assets/src/library/js/bootstrap.min.js', array( 'jquery' ), false, true );
 
         // Enqueue Scripts
