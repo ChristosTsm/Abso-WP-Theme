@@ -74,6 +74,9 @@ src: local('Montserrat Light'), local('Montserrat-Light'),
 /*---------------------------------
 		Body Text Font Sizes
 -----------------------------------*/
+body {
+  font-family: "Montserrat", sans-serif, monospace; }
+
 /**
  * Add font scale with media query as per configuration on $body-text
  * Ex: @include body-text( h1 );
