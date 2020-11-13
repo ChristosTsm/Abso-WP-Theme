@@ -12,7 +12,9 @@ License URI: LICENSE
 Text Domain: abso
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
-
+body {
+    font-family: 'Montserrat' !important;
+}
 
 img {
     width: 100%;
